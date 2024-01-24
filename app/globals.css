@@ -2,26 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+/* CREATE BLOCK                 className="w-full text-center p-6 border border-[#5d34a5] bg-gradient-to-br from-[#482980] to-[#291749] rounded-3xl */
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* BUTTON - TOP BAR             className="px-2 text-white font-light rounded-md hover:text-[#1f1137] hover:bg-white" */
+
+/* BUTTON - BLOCK / GENERAL     className="bg-violet-400 px-3 py-1 text-white font-semibold rounded-md hover:text-[#1f1137] hover:bg-white hover:font-semibold" */
+
+/* TITLES                       className="text-white text-5xl font-light"*/
+
+/* SUBHEADINGS                  className="text-white font-light" */
+
+/* TEXT                         className="text-white text-opacity-70" */
