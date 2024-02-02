@@ -3,14 +3,14 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div className="w-full  bg-[#150c25] bottom-0">
+      <div className="w-full  bg-black bottom-0">
       <div className="box-content bg-white"></div>
 
-      <div className="py-8 flex justify-center space-x-3">
-        <button className="px-2 text-white font-semibold rounded-md hover:text-[#5d34a5] hover:bg-white hover:font-semibold">HOME</button>
-        <button className="px-2 text-white font-semibold rounded-md hover:text-[#5d34a5] hover:bg-white hover:font-semibold">About</button>
-        <button className="px-2 text-white font-semibold rounded-md hover:text-[#5d34a5] hover:bg-white hover:font-semibold">FAQs</button>
-        <button className="px-2 text-white font-semibold rounded-md hover:text-[#5d34a5] hover:bg-white hover:font-semibold">Social Links</button>
+      <div className="py-8 flex border-opacity-70% border-t justify-center space-x-3">
+        <button className="px-2 text-white text-opacity-70 rounded-md  hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">HOME</button>
+        <button className="px-2 text-white text-opacity-70 rounded-md  hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">About</button>
+        <button className="px-2 text-white text-opacity-70 rounded-md  hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">FAQs</button>
+        <button className="px-2 text-white text-opacity-70 rounded-md  hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">Social Links</button>
       </div>
     </div></div>
   );

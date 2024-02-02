@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* BACKGROUND                   className="bg-black" */
 
-/* CREATE BLOCK                 className="w-full text-center p-6 border border-[#5d34a5] bg-gradient-to-br from-[#482980] to-[#291749] rounded-3xl */
+/* CREATE BLOCK                 className="w-auto text-center p-6 bg-gradient-to-br from-blue-800 to-violet-700 rounded-3xl" */
 
-/* BUTTON - TOP BAR             className="px-2 text-white font-light rounded-md hover:text-[#1f1137] hover:bg-white" */
+/* BUTTON - TOP BAR             className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800"*/
 
-/* BUTTON - BLOCK / GENERAL     className="bg-violet-400 px-3 py-1 text-white font-semibold rounded-md hover:text-[#1f1137] hover:bg-white hover:font-semibold" */
+/* BUTTON - BLOCK / GENERAL     className="text-center bg-gradient-to-br from-blue-600 to-violet-800  px-3 py-1 text-white font-semibold rounded-md hover:text-[#1f1137] hover:bg-white hover:font-semibold" */
 
-/* TITLES                       className="text-white text-5xl font-light"*/
+/* TITLES                       className="text-white text-5xl text-center pt-8 "*/
 
-/* SUBHEADINGS                  className="text-white font-light" */
+/* SUBHEADINGS                  className="text-white text-3xl font-light" */
 
 /* TEXT                         className="text-white text-opacity-70" */
+
+/* square       <div className="w-[20px] h-[20px] bg-white"></div> */
+

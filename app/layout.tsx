@@ -10,6 +10,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <body className="min-h-[100vh]">
           <Nav />
           {children}
+          <div className="bg-black pb-8"></div>
           <Footer />
         </body>
       </ClerkProvider>
