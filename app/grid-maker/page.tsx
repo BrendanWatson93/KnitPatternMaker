@@ -13,7 +13,7 @@ const GridMaker = () => {
   };
 
   return (
-    <div className="bg-black">
+    <div className="bg-black max-w-[100vw] overflow-hidden">
       <h1 className="text-white text-5xl text-center pt-8">Design Grid</h1>
       {/* hide this h1 when submit button is pressed */}
       <div className="flex justify-center">
@@ -23,6 +23,7 @@ const GridMaker = () => {
           please select the size of the knit grid you would like to use - This
           can also be edited later using the toolbar
         </h1>
+        
       </div>
 
       <div className="flex justify-center pb-8">
@@ -72,37 +73,47 @@ const GridMaker = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2">
-        <div className="max-w-[15%] flex">
+      <div className="flex ">
+
           <div className="bg-black space-x-4 border-opacity-70% border-r text-center ">
             {/* explanation of each option somewhere - perhaps in the box on click? or in a dropdown? */}
-            <button className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
+            <button className="px-3 py-2 text-white text-opacity-70 rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
               TOOLS
             </button>
-            <button className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
+            <div className="border-b border-white border-opacity-70"></div>
+            <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
               SELECT
             </button>
-            <button className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
+            <div className="border-b border-white border-opacity-70"></div>
+            <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
               SYMBOLS
             </button>
-            <button className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
-              BACKGROUND COLOUR SELECT
+            <div className="border-b border-white border-opacity-70"></div>
+            <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
+              BACKGROUND
             </button>
-            <button className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
-              COLOUR SELECT{" "}
+            <div className="border-b border-white border-opacity-70"></div>
+            <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
+              COLOUR {" "}
             </button>
-            <button className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
+            <div className="border-b border-white border-opacity-70"></div>
+            <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
               DRAW TOOLS
             </button>
-            <button className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
+            <div className="border-b border-white border-opacity-70"></div>
+            <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
               ZOOM + / -
             </button>
+            <div className="border-b border-white border-opacity-70"></div>
           </div>
 
-          <div className="px-2 py-2 w-fu">
-            <Grid width={width} height={height} />
+          <div className="px-2 overflow-auto py-2 w-full flex">
+
+              <Grid width={width} height={height} />
+  
           </div>
-        </div>
+
+     
       </div>
     </div>
   );
