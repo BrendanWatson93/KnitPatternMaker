@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Grid from "../components/grid";
+import Colourpicker from "../components/Colourpicker";
 
 const GridMaker = () => {
   const [width, setWidth] = useState(5);
@@ -26,6 +27,7 @@ const GridMaker = () => {
         
       </div>
 
+{/* Create a grid based on the numbers in the width and height inputs*/}
       <div className="flex justify-center pb-8">
         <form onSubmit={handleFormSubmit}>
           <label className="text-white text-opacity-70 px-2 ">
@@ -47,15 +49,10 @@ const GridMaker = () => {
             />
           </label>
 
-          <button
-            className="text-center bg-gradient-to-br from-blue-600 to-violet-800  px-3 py-1 text-white font-semibold rounded-md hover:text-[#1f1137] hover:bg-white hover:font-semibold"
-            type="submit"
-          >
-            Submit
-          </button>
         </form>
       </div>
 
+{/* Top toolbar for the grid */}
       <div>
         <div className="bg-black border-opacity-70% border-b border-t space-x-12 flex justify-center py-2">
           <button className="px-3 py-1 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
@@ -73,6 +70,8 @@ const GridMaker = () => {
         </div>
       </div>
 
+
+{/* Leftside toolbar - all tools for editing the grid */}
       <div className="flex ">
 
           <div className="bg-black space-x-4 border-opacity-70% border-r text-center ">
@@ -92,10 +91,11 @@ const GridMaker = () => {
             <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
               BACKGROUND
             </button>
+
             <div className="border-b border-white border-opacity-70"></div>
-            <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
-              COLOUR {" "}
-            </button>
+            <Colourpicker />
+           
+
             <div className="border-b border-white border-opacity-70"></div>
             <button className="px-3 py-2 text-white text-opacity-70  rounded-md hover:text-white hover:bg-gradient-to-br from-blue-600 to-violet-800">
               DRAW TOOLS
