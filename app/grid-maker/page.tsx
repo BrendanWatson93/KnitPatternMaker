@@ -1,12 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Grid from "../components/grid";
-import Colourpicker from "../components/Colourpicker";
+import Colourgrid from "../components/Colourgrid";
 
 const GridMaker = () => {
   const [width, setWidth] = useState(5);
   const [height, setHeight] = useState(5);
+  const [selectedColour, setSelectedcolour] = useState("");
+  useEffect(() => {
+    console.log("Selected colour: ", selectedColour);
+  }
+  , [selectedColour]);
 
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -48,7 +53,6 @@ const GridMaker = () => {
               onChange={(e) => setHeight(parseInt(e.target.value))}
             />
           </label>
-
         </form>
       </div>
 
@@ -93,7 +97,7 @@ const GridMaker = () => {
             </button>
 
             <div className="border-b border-white border-opacity-70"></div>
-            <Colourpicker />
+            <Colourgrid setSelectedColour={setSelectedcolour} />
            
 
             <div className="border-b border-white border-opacity-70"></div>
